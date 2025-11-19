@@ -17,9 +17,7 @@ function formatValue(
   return "invalid data type";
 }
 
-// console.log(formatValue("hello"));
-// console.log(formatValue(5));
-// console.log(formatValue([]));
+
 
 
 
@@ -34,8 +32,6 @@ function getLength(value: string | any[]): number {
   return 0;
 }
 
-// console.log(getLength("typescript"));
-// console.log(getLength([10, 20, 30, 40]));
 
 
 
@@ -53,11 +49,6 @@ class Person {
   }
 }
 
-// const person1 = new Person("John Doe", 30);
-// console.log(person1.getDetails());
-
-// const person2 = new Person("Alice", 25);
-// console.log(person2.getDetails());
 
 
 
@@ -70,14 +61,6 @@ function filterByRating(items: Item[]): Item[] {
   return items.filter((item) => item.rating >= 4);
 }
 
-// const books = [
-//   { title: 'Book A', rating: 4.5 },
-//   { title: 'Book B', rating: 3.2 },
-//   { title: 'Book C', rating: 5.0 },
-// ];
-
-// console.log(filterByRating(books));
-// console.log(books);
 
 
 
@@ -92,13 +75,6 @@ function filterActiveUsers(users: User[]): User[] {
   return users.filter((user) => user.isActive === true);
 }
 
-// const users = [
-//   { id: 1, name: 'Rakib', email: 'rakib@example.com', isActive: true },
-//   { id: 2, name: 'Asha', email: 'asha@example.com', isActive: false },
-//   { id: 3, name: 'Rumi', email: 'rumi@example.com', isActive: true },
-// ];
-
-// console.log(filterActiveUsers(users));
 
 
 
@@ -116,14 +92,6 @@ function printBookDetails(book: Book): void {
   );
 }
 
-// const myBook: Book = {
-//   title: "The Great Gatsby",
-//   author: "F. Scott Fitzgerald",
-//   publishedYear: 1925,
-//   isAvailable: true,
-// };
-
-// printBookDetails(myBook);
 
 
 
@@ -157,10 +125,7 @@ function getUniqueValues(
   return result;
 }
 
-// const array1 = [1, 2, 3, 4, 5];
-// const array2 = [3, 4, 5, 6, 7];
 
-// console.log(getUniqueValues(array1, array2));
 
 
 
@@ -191,10 +156,4 @@ function calculateTotalPrice(products: Product[]): number {
     .reduce((sum, val) => sum + val, 0);
 }
 
-// const products = [
-//   { name: "Pen", price: 10, quantity: 2 },
-//   { name: "Notebook", price: 25, quantity: 3, discount: 10 },
-//   { name: "Bag", price: 50, quantity: 1, discount: 20 },
-// ];
 
-// console.log(calculateTotalPrice(products));
